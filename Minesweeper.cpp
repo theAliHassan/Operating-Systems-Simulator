@@ -8,7 +8,6 @@
 #define COLORS
 #define KRED "\x1B[31m"
 #endif
-#include "MinesweeperNewTerminal.cpp"
 using namespace std;
 
 void Reveal(int, int);

@@ -47,7 +47,7 @@ double Ram;
 
 //============================GLOBAL VARIABLES====================
 int variables,
-    function, print_document, alloc;
+    func, print_document, alloc;
 int mycount = 0;
 int sum = 0;
 bool flag = 0;
@@ -192,7 +192,7 @@ void ResourceAllocate()
   {
     process[i].Ram_memory = 512;
   }
-  if (function >= 2)
+  if (func >= 2)
   {
     process[i].Stack_memory = 1024;
   }
@@ -772,7 +772,7 @@ int calculator()
 {
   pthread_mutex_lock(&mut);
   auto startT = high_resolution_clock::now();
-  variables = 3, function = 0, print_document = 0;
+  variables = 3, func = 0, print_document = 0;
   processName = "Calculator";
   alloc = 1;
   ResourceAllocate();
